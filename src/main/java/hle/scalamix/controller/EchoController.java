@@ -15,4 +15,5 @@ public class EchoController {
         scalaService.hello();
         return "Scala java mix";
     }
+
 }

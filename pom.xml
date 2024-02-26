@@ -38,6 +38,13 @@
             <artifactId>scala3-library_${scala.compat.version}</artifactId>
             <version>${scala.version}</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.scalaz/scalaz-core -->
+        <dependency>
+            <groupId>org.scalaz</groupId>
+            <artifactId>scalaz-core_3</artifactId>
+            <version>7.3.8</version>
+        </dependency>
+
 
         <dependency>
             <groupId>org.postgresql</groupId>
