@@ -11,7 +11,7 @@ object ProductDefectDataAccess {
   
   // TODO: ReaderT
   // TODO: Do not return entity, model instead
-  def findById(key: SingleDefectKey) : Reader[ProductDefectRepository, Option[ProductDefect]] = {
-    Reader(repo => repo.findById_ProductIdAndId_InspectDateAndId_DefectId(key.productId, key.inspectDt, key.defectId).toScala)
+  def findById(key : SingleDefectKey) : Reader[ProductDefectRepository, Option[ProductDefect]] = {
+    Reader(repo => repo.findById_ProductIdAndId_InspectDateAndId_DefectId(key.productId, key.inspectDt, key.defectId))
   }
 }
